@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3100A4F0-9E79-4F26-AEEA-2BDEA1F2C947}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLiCaPhe</RootNamespace>
+    <AssemblyName>QuanLiCaPhe</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account.designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFood.designer.cs">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup_Restore.Designer.cs">
+      <DependentUpon>Backup_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePersional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePersional.Designer.cs">
+      <DependentUpon>ChangePersional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_backup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_backup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdCategory.designer.cs">
+      <DependentUpon>frmAdCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddFood.Designer.cs">
+      <DependentUpon>frmAddFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdTables.designer.cs">
+      <DependentUpon>frmAdTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanvien.designer.cs">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportFood.Designer.cs">
+      <DependentUpon>frmReportFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportNV.Designer.cs">
+      <DependentUpon>frmReportNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pay.Designer.cs">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_QUANCAFEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_QUANCAFEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_QUANCAFEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_QUANCAFEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReFood.Designer.cs">
+      <DependentUpon>ReFood.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFood.resx">
+      <DependentUpon>AddFood.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup_Restore.resx">
+      <DependentUpon>Backup_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePersional.resx">
+      <DependentUpon>ChangePersional.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdCategory.resx">
+      <DependentUpon>frmAdCategory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFood.resx">
+      <DependentUpon>frmAddFood.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdTables.resx">
+      <DependentUpon>frmAdTables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanvien.resx">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportFood.resx">
+      <DependentUpon>frmReportFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportNV.resx">
+      <DependentUpon>frmReportNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay.resx">
+      <DependentUpon>Pay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReFood.resx">
+      <DependentUpon>ReFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFood.rdlc" />
+    <EmbeddedResource Include="ReportNV.rdlc" />
+    <None Include="DataSet_backup.xsc">
+      <DependentUpon>DataSet_backup.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_backup.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_backup.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_backup.xss">
+      <DependentUpon>DataSet_backup.xsd</DependentUpon>
+    </None>
+    <None Include="hinh\Checkmark-48px.zip" />
+    <None Include="hinh\EasyLogin.zip" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QL_QUANCAFEDataSet.xsc">
+      <DependentUpon>QL_QUANCAFEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAFEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_QUANCAFEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_QUANCAFEDataSet.xss">
+      <DependentUpon>QL_QUANCAFEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAFEDataSet1.xsc">
+      <DependentUpon>QL_QUANCAFEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAFEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_QUANCAFEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_QUANCAFEDataSet1.xss">
+      <DependentUpon>QL_QUANCAFEDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hinh\add.ico" />
+    <Content Include="hinh\cash_register.ico" />
+    <Content Include="hinh\coffee.ico" />
+    <Content Include="hinh\Dakirby309-Simply-Styled-Java.ico" />
+    <Content Include="hinh\icons8-checkmark-48.png" />
+    <Content Include="hinh\login.ico" />
+    <Content Include="hinh\service_manager.ico" />
+    <Content Include="Resources\icons8-business-64.png" />
+    <Content Include="Resources\icons8-business-641.png" />
+    <Content Include="Resources\icons8-cancel-64.png" />
+    <Content Include="Resources\icons8-cancel-641.png" />
+    <Content Include="Resources\icons8-close-window-32.png" />
+    <Content Include="Resources\icons8-login-32.png" />
+    <Content Include="Resources\icons8-password-128.png" />
+    <Content Include="Resources\icons8-plus-48 %281%29.png" />
+    <Content Include="Resources\icons8-plus-48.png" />
+    <Content Include="Resources\icons8-purchase-order-64.png" />
+    <Content Include="Resources\icons8-save-as-48.png" />
+    <Content Include="Resources\icons8-statistics-64.png" />
+    <Content Include="Resources\icons8-system-information-80.png" />
+    <Content Include="Resources\icons8-transfer-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms">
+      <Version>150.1484.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

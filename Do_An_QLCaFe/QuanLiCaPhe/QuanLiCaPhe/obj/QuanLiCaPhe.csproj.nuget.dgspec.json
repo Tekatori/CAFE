@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\DanhTran\\Desktop\\Do_An_QLCaFe\\QuanLiCaPhe\\QuanLiCaPhe\\QuanLiCaPhe.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\DanhTran\\Desktop\\Do_An_QLCaFe\\QuanLiCaPhe\\QuanLiCaPhe\\QuanLiCaPhe.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DanhTran\\Desktop\\Do_An_QLCaFe\\QuanLiCaPhe\\QuanLiCaPhe\\QuanLiCaPhe.csproj",
+        "projectName": "QuanLiCaPhe",
+        "projectPath": "C:\\Users\\DanhTran\\Desktop\\Do_An_QLCaFe\\QuanLiCaPhe\\QuanLiCaPhe\\QuanLiCaPhe.csproj",
+        "packagesPath": "C:\\Users\\DanhTran\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanhTran\\Desktop\\Do_An_QLCaFe\\QuanLiCaPhe\\QuanLiCaPhe\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DanhTran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+              "target": "Package",
+              "version": "[150.1484.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
